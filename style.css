@@ -54,7 +54,7 @@ body {
 .Image {
     width: 76vw;
     border-radius: 8px;
-    height: 35vh;
+    height: 39vh;
     object-fit: cover;
 }
 .imageLogo{
