@@ -9,6 +9,7 @@
     let container=document.querySelector('.container')
     let list =document.createElement('div')
 
+
 resCodes.forEach(async(element) => {
 let res = await fetch(url + element)
 let link =document.createElement("a")
@@ -17,8 +18,6 @@ cat.src=url+element
 link.href=url+"status/"+element
 link.target="_blank"
 let card =document.createElement('div')
-
-
 list.classList.add("card-list")
 card.classList.add("card-item")
 cat.classList.add("Image")
