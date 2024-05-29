@@ -9,9 +9,10 @@
     let container=document.querySelector('.container')
     let list =document.createElement('div')
 
+    async function fetchData(){
 
-resCodes.forEach(async(element) => {
-let res = await fetch(url + element)
+resCodes.forEach( (element) => {
+let res =  fetch(url + element)
 let link =document.createElement("a")
 let cat =document.createElement('img')
 cat.src=url+element
@@ -31,4 +32,7 @@ container.appendChild(link)
 
 });
 
+    }
 
+
+fetchData()
