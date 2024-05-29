@@ -33,7 +33,7 @@ body {
 .Image{
     width: 25vw;
     border-radius: 8px;
-    height: 45vh;
+    height: 55vh;
     object-fit: cover;
 }
 .logo{
