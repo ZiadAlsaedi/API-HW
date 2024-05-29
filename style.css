@@ -11,11 +11,12 @@ body {
 }
 
 .card-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
     padding: 20px;
     gap: 20px;
     width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
  .card-item {
@@ -24,10 +25,9 @@ body {
     border-radius: 8px;
     list-style: none;
     box-shadow: 5px 10px 8px #888888;
-    cursor: pointer;
-    text-decoration: none;
-    border: 2px solid transparent;
-    transition: border 0.5s ease;
+
+
+ 
 }
 
 .Image{
