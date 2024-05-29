@@ -8,6 +8,9 @@
     let url = 'https://http.cat/'; 
     let container=document.querySelector('.container')
     let list =document.createElement('div')
+    list.classList.add("card-list")
+    container.appendChild(list)
+
 
     async function fetchData(){
 
@@ -19,13 +22,12 @@ cat.src=url+element
 link.href=url+"status/"+element
 link.target="_blank"
 let card =document.createElement('div')
-list.classList.add("card-list")
 card.classList.add("card-item")
 cat.classList.add("Image")
 card.append(cat)
-list.append(card)
-link.appendChild(list)
-container.appendChild(link)
+link.append(card)
+list.appendChild(link)
+
 
 
 
